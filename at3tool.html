@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>at3tool</title>
+    <style>
+      html, body {
+          height: 100%;
+          overflow: hidden;
+      }
+      canvas { display: none; }
+      textarea { 
+        width: 100%; 
+        height: calc(100% - 44px); 
+        border: none;
+        font-family: monospace; 
+        -webkit-box-sizing: border-box;
+           -moz-box-sizing: border-box;
+                box-sizing: border-box;
+      }
+      button {
+        height: 40px;
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <textarea class="emscripten" id="output"></textarea>
+    <button id="run">Run (again)</button>
+    <script src="browserfs.boxedwine.js"></script>
+    <script src="at3tool.js"></script>
+    <script async type="text/javascript" src="boxedwine-formatted.js"></script>
+  </body>
+</html>
